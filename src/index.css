@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  list-style: none;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+}
+input {
+  padding: 10px;
+  border: 1px solid #4f4f4f;
+  border-radius: 10px;
+  outline: none;
+}
