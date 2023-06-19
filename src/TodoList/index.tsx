@@ -24,27 +24,29 @@ const TodoList: React.FC = () => {
   };
   return (
     <div className={style.root}>
-      <h1>To-Do List</h1>
-      {todos.length === 0 ? (
-        <p>Список пуст</p>
-      ) : (
-        <ul>
-          {todos.map((e, i) => (
-            <li key={i}>
-              {e.text}
-              <button onClick={() => handleToogle(e.id)}>-</button>
-            </li>
-          ))}
-        </ul>
-      )}
-      <div>
-        <input
-          value={input}
-          onChange={(e) => setInput(e.currentTarget.value)}
-          type="text"
-          placeholder="Введите заметку"
-        />
-        <button onClick={handleClick}>+</button>
+      <div className={style.rootBox}>
+        <h1>To-Do List</h1>
+        {todos.length === 0 ? (
+          <span>Список пуст</span>
+        ) : (
+          <ul>
+            {todos.map((e, i) => (
+              <li key={i}>
+                {e.text}
+                <button onClick={() => handleToogle(e.id)}>-</button>
+              </li>
+            ))}
+          </ul>
+        )}
+        <div className={style.rootInner}>
+          <input
+            value={input}
+            onChange={(e) => setInput(e.currentTarget.value)}
+            type="text"
+            placeholder="Введите заметку"
+          />
+          <button onClick={handleClick}>+</button>
+        </div>
       </div>
     </div>
   );

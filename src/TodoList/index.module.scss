@@ -1,8 +1,19 @@
 .root {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #a4b2d6;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &Box {
+    padding: 10px;
+    background-color: #a4b2d6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  &Inner {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+    padding: 10px;
+  }
 }

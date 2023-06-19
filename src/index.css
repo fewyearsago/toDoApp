@@ -43,6 +43,7 @@ li:last-child {
 
 button {
   margin-left: 10px;
+
   padding: 5px 10px;
   border: none;
   background-color: #ddd;
@@ -55,13 +56,16 @@ button {
 button:hover {
   background-color: #ccc;
 }
+span {
+  padding: 10px;
+}
 
 input[type='text'] {
   width: 100%;
   padding: 8px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  margin-bottom: 10px;
+
   font-size: 14px;
 }
 
